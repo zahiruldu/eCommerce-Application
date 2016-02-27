@@ -25,3 +25,19 @@ function uploadAndNewLink($image){
 			return false;
 		}
 }
+
+// Get cart item amount
+
+function getCart($user_id){
+	require_once('config.php');
+	
+	$sql = "SELECT COUNT(id) FROM cart WHERE user_id='$user_id' AND status='cart'";
+	$result= $conn->query($sql);
+	if ($result) {
+		while($row = $result->fetch_array()){
+			return $row["COUNT(id)"];
+		}
+	}else{
+		return "0";
+	}
+}

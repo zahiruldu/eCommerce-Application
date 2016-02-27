@@ -1,6 +1,7 @@
 <?php
 
 session_start();
+require_once('functions.php');
 
 if(isset($_SESSION['user_id']) && $_SESSION['user_type']!=='admin'){
 	header('location:index.php');
