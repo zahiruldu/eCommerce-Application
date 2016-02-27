@@ -1,6 +1,6 @@
 # eCommerce-Application
 
-Demo: http://45.58.44.180/ecommerce/
+Live Demo: http://45.58.44.180/ecommerce/
 
 User
 ======
